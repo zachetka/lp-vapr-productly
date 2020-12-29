@@ -18,15 +18,13 @@
     }
     &__btn{
         margin-right: 30px;
-        padding: 14px 40px 14px;
+        padding: 14px 40px;
         font-weight: 700;
     }
     &__link {
         position: relative;
-        padding-left: 25px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.5;
+        padding-left: 25px;        
+        font-weight: 600;        
         color: $bright;
         text-decoration: underline;
         &:before {

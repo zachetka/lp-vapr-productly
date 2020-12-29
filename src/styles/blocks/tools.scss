@@ -1,0 +1,35 @@
+.tools {    
+    padding: 110px 0 90px;
+    &__title {
+        margin: 0 auto 54px;
+        padding: 0 10px;
+        max-width: 530px;
+        text-align: center;
+    }
+    &__items-wrapper {        
+                
+    }
+    &__items {
+        margin-bottom: 60px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;        
+    }
+    &__item {
+        max-width: 240px;
+    }
+    &__item-img {
+        margin-bottom: 30px;
+    }
+    &__item-title {
+        margin-bottom: 14px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.5;
+        color: $title-color;
+    }
+    &__btn {     
+        
+        padding: 14px 34px;    
+    }
+}
