@@ -1,3 +1,45 @@
-* {
+/* Default style */
+// :root {
+//     font-size: $mainFontSize;
+// }
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+    line-height: $mainLineHeight;
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {    
+    cursor: pointer;
+}
+
+input:not([type=checkbox]):not([type=radio]), textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    font-family: $fontFamily;
 }

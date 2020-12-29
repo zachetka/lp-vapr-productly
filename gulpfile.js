@@ -27,7 +27,7 @@ const destPath = 'docs';
 const path = {
     clean: destPath,
     src: {
-        html: `${srcPath}/pages/*.html`,
+        html: `${srcPath}/*.html`,
         css: `${srcPath}/styles/main.scss`,
         js: `${srcPath}/scripts/main.js`,
         sprite: `${srcPath}/images/sprite/**/*.svg`,
@@ -51,7 +51,6 @@ const path = {
         font: `${destPath}/assets/fonts`,
     },
     styleLibs: [
-        'src/styles/libs/reset.css',
         'src/styles/libs/slick.css',
         /*'src/styles/libs/jquery.fancybox.css'*/
     ],
@@ -90,7 +89,7 @@ function html() {
                 collapseWhitespace: true,
             })
         )
-        .pipe(replace('../images', 'assets/images'))
+        .pipe(replace('/src/images', 'assets/images'))
         .pipe(dest(path.build.html));
 }
 
@@ -118,6 +117,7 @@ function css() {
                     }),
                 ])
             )
+            .pipe(replace('/src/images', 'images'))
             .pipe(dest(path.build.css));
     } else {
         return src([...path.styleLibs, path.src.css])
@@ -126,6 +126,7 @@ function css() {
             .pipe(sassGlob())
             .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
             .pipe(sourcemaps.write())
+            .pipe(replace('/src/images', 'images'))
             .pipe(dest(path.build.css));
     }
 }
