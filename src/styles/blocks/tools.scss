@@ -1,5 +1,5 @@
 .tools {    
-    padding: 110px 0 90px;
+    padding-top: 110px;
     &__title {
         margin: 0 auto 54px;
         padding: 0 10px;
@@ -7,7 +7,11 @@
         text-align: center;
     }
     &__items-wrapper {        
-                
+       padding-bottom: 90px;   
+       text-align: center;
+       background-image: url('/src/images/tools-bg.svg');  
+       background-repeat: no-repeat;
+       background-position: bottom;       
     }
     &__items {
         margin-bottom: 60px;
@@ -29,7 +33,6 @@
         color: $title-color;
     }
     &__btn {     
-        
         padding: 14px 34px;    
     }
 }
