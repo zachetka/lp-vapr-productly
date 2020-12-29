@@ -1,0 +1,49 @@
+.directions {
+    padding: 120px 0 157px;
+    &__item {        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 100px;
+        }
+    }
+    &__item-content {
+        max-width: 486px;
+    }
+    &__item-pretitle {
+        margin-bottom: 3px;
+    }
+    &__item-title {
+        margin-bottom: 22px;
+    }
+    &__item-description {
+        margin-bottom: 30px;
+    }
+    &__item-subtitle {
+        margin-bottom: 12px;
+        font-weight: 700;
+        color: $title-color;
+    }
+    &__item-text {
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+    &__list-item {
+        padding-left: 65px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 35px;
+            height: 35px;
+            background-image: url('/src/images/check.svg');
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
