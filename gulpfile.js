@@ -51,12 +51,11 @@ const path = {
         font: `${destPath}/assets/fonts`,
     },
     styleLibs: [
-        'src/styles/libs/slick.css',
-        /*'src/styles/libs/jquery.fancybox.css'*/
+        'node_modules/slick-carousel/slick/slick.css'
     ],
     scriptLibs: [
-        'src/scripts/libs/slick.min.js',
-        'src/scripts/libs/jquery.fancybox.min.js',
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js'
     ],
 };
 
