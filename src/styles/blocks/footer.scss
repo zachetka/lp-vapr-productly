@@ -1,0 +1,42 @@
+.footer {
+    &__inner {
+        padding: 100px 0;
+        border-top: 1px solid $light;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 34px;
+        max-width: 280px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $title-color;
+    }
+    &__menu-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 35px;
+        color: $text-color;
+        transition: all .3s;
+        &:hover {
+            color: $bright;
+        }
+    }
+    &__form-input {
+        margin-bottom: 22px;
+        height: 48px;
+        padding: 0 15px;
+        border: 1px solid $light;        
+        border-radius: 4px;
+        &::placeholder {
+            color: $light;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+    &__form-btn {
+        padding: 7px 15px;
+        font-weight: 700;
+    }
+}

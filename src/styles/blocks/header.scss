@@ -8,6 +8,23 @@
     &__menu {
         margin-left: auto;
     }
+    &__menu-list {        
+        display: flex;
+    }
+    &__menu-item {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+    &__menu-link {
+        font-size: 14px;
+        font-weight: 400;
+        color: $title-color;
+        transition: all .3s;
+        &:hover {
+            color: $bright;
+        }
+    }
     &__user {
         margin-left: 53px;
         display: flex;
