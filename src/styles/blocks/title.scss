@@ -3,8 +3,14 @@
     font-weight: 700;
     line-height: 1.5;
     color: $title-color;
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
     &--main {
         font-size: 44px;
         line-height: 1.23;
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
     }
 }

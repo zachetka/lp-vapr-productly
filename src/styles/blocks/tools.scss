@@ -1,5 +1,8 @@
 .tools {    
     padding-top: 110px;
+    @media (max-width: 768px) {
+        padding-top: 64px;                        
+    }
     &__title {
         margin: 0 auto 54px;
         padding: 0 10px;
@@ -11,17 +14,24 @@
        text-align: center;
        background-image: url('/src/images/tools-bg.svg');  
        background-repeat: no-repeat;
-       background-position: bottom;       
+       background-position: bottom;  
+            
     }
     &__items {
         margin-bottom: 60px;
         padding: 0 16px;
         display: flex;
         justify-content: space-between;    
-        text-align: left;    
+        text-align: left;  
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;                        
+        }  
     }
     &__item {
-        max-width: 240px;
+        width: 240px;
+        @media (max-width: 1024px) {
+            width: 50%;                        
+        }  
     }
     &__item-img {
         margin-bottom: 30px;
@@ -35,6 +45,5 @@
     }
     &__btn {     
         padding: 14px 34px;   
-        font-weight: 700; 
     }
 }

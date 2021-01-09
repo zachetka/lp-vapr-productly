@@ -2,12 +2,16 @@
     display: inline-block;
     font-family: $fontFamily;
     font-size: 16px;
+    font-weight: 600;
     line-height: 1.5;
     color: $white;
     background: $bright;
     border-radius: 4px;
     border: 1px solid $bright;
     transition: all .3s;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
     &:hover {
         color: $bright;
         background: transparent;

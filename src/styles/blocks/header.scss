@@ -7,14 +7,15 @@
     }
     &__menu {
         margin-left: auto;
+        @media (max-width: 800px) {
+            display: none;     
+        }
     }
     &__menu-list {        
         display: flex;
     }
     &__menu-item {
-        &:not(:last-child) {
-            margin-right: 24px;
-        }
+        margin-right: 24px;        
     }
     &__menu-link {
         font-size: 14px;
@@ -25,13 +26,13 @@
             color: $bright;
         }
     }
-    &__user {
-        margin-left: 53px;
+    &__user {        
         display: flex;
     }
-    &__btn {
-        margin-right: 14px;
+    &__btn {        
         padding: 11px 25px;
-        font-weight: 600;
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
     }
 }

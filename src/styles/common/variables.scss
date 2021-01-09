@@ -1,12 +1,18 @@
-/* Text */
+/* Fonts */
 $fontFamily: 'Poppins', sans-serif;
-$mainFontSize: 16px;
-$mainFontWeight: 500;
-$mainLineHeight: 1.625;
 
 /* Colors */
 $white: #ffffff;
-$light: #BCD0E5;
+$light: #DCD2C4;
 $bright: #FF9900;
 $text-color: #544837;
 $title-color: #2F281E;
+
+/* Breakpoints */
+$xxl: 1200px;
+$xl: 1024px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$xs: 480px;
+$xxs: 320px;

@@ -8,7 +8,7 @@
     &__title {
         margin-bottom: 34px;
         max-width: 280px;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 20px;
         line-height: 30px;
         color: $title-color;
@@ -29,14 +29,18 @@
         padding: 0 15px;
         border: 1px solid $light;        
         border-radius: 4px;
-        &::placeholder {
-            color: $light;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        color: $text-color;
+        &::placeholder { 
             font-weight: 400;
             font-size: 16px;
+            line-height: 1;
+            color: $light;
         }
     }
     &__form-btn {
         padding: 7px 15px;
-        font-weight: 700;
     }
 }
