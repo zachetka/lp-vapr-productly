@@ -4,6 +4,27 @@
         border-top: 1px solid $light;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 800px) {
+            padding: 64px 0;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 576px) {
+            justify-content: space-around;
+        }
+        @media (max-width: 380px) {
+            justify-content: space-between;
+        }
+    }
+    &__logo {
+        @media (max-width: 576px) {
+            flex-basis: 100%;
+            margin-bottom: 32px;            
+        }
+    }
+    &__logo-img {
+        @media (max-width: 576px) {
+            margin: 0 auto;         
+        }
     }
     &__title {
         margin-bottom: 34px;
@@ -12,6 +33,10 @@
         font-size: 20px;
         line-height: 30px;
         color: $title-color;
+        @media (max-width: 800px) {
+            max-width: 100%;
+            margin-bottom: 8px;
+        }
     }
     &__menu-link {
         font-weight: 400;
@@ -21,6 +46,12 @@
         transition: all .3s;
         &:hover {
             color: $bright;
+        }
+    }
+    &__form {
+        @media (max-width: 800px) {
+            // flex-basis: 70%;
+            margin: 32px auto 0;          
         }
     }
     &__form-input {
@@ -39,8 +70,14 @@
             line-height: 1;
             color: $light;
         }
+        @media (max-width: 800px) {
+            margin-bottom: 16px;         
+        }
     }
     &__form-btn {
         padding: 7px 15px;
+        @media (max-width: 800px) {
+            width: 100%;         
+        }
     }
 }
