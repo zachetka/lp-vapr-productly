@@ -46,13 +46,16 @@
         line-height: 35px;
         color: $text-color;
         transition: all .3s;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 28px;
+        }
         &:hover {
             color: $bright;
         }
     }
     &__form {
         @media (max-width: 800px) {
-            // flex-basis: 70%;
             margin: 32px auto 0;          
         }
     }
