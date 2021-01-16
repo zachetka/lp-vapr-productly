@@ -4,9 +4,11 @@
         border-top: 1px solid $light;
         display: flex;
         justify-content: space-between;
-        @media (max-width: 800px) {
-            padding: 64px 0;
+        @media (max-width: 800px) {            
             flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            padding: 64px 0;
         }
         @media (max-width: 576px) {
             justify-content: space-around;
