@@ -23,4 +23,10 @@ $(function() {
             }
         ]
     });
+
+    $(".header__menu-btn").on('click', function(){
+        $(".header__menu-btn--1").toggleClass("active");  
+        $(".header__menu-btn--2").toggleClass("active"); 
+        $(".header__menu-btn--3").toggleClass("active"); 
+    });
 });
