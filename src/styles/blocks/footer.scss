@@ -8,7 +8,7 @@
             flex-wrap: wrap;
         }
         @media (max-width: 768px) {
-            padding: 64px 0;
+            padding: 64px 0 32px;
         }
         @media (max-width: 576px) {
             justify-content: space-around;
@@ -80,7 +80,7 @@
         }
     }
     &__form-btn {
-        padding: 7px 15px;
+        padding: 11px 16px;
         @media (max-width: 800px) {
             width: 100%;         
         }
